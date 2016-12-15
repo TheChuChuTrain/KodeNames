@@ -42,7 +42,7 @@ function fire() {
 			sessionData = NSFWdata.slice(0);
 			break;
 		case 'NSFW+default':
-			sessionData = (NSFWdata + defaultData).slice(0);
+			sessionData = NSFWdata.concat(defaultData).slice(0);
 			break;
 		case '2knouns':
 			sessionData = data.slice(0);
