@@ -40,8 +40,10 @@ function fire() {
 	switch (option) {
 		case 'NSFW':
 			sessionData = NSFWdata.slice(0);
+			break;
 		case 'NSFW+default':
 			sessionData = (NSFWdata + defaultData).slice(0);
+			break;
 		case '2knouns':
 			sessionData = data.slice(0);
 			break;
